@@ -104,6 +104,11 @@ main{max-width:1000px;margin:0 auto;padding:28px 18px 40px}
 .pick{min-height:1.6em;text-align:center;font-weight:600;margin:-14px 0 24px;color:var(--navy)}
 :root[data-theme="dark"] .pick{color:var(--accent)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pick{color:var(--accent)}}
+.instrument-picker{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;margin:0 0 28px;padding:0;border:0}
+.instrument-picker legend{width:100%;margin-bottom:12px;text-align:center;font-size:clamp(18px,2.4vw,24px);font-weight:700}
+.instrument-picker label{display:flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid #ffffff80;border-radius:22px;background:var(--card);font-size:clamp(17px,2.2vw,21px);cursor:pointer}
+.instrument-picker input{width:20px;height:20px;margin:0;accent-color:var(--navy)}
+.instrument-picker label:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
 .pre-enroll{display:flex;justify-content:center;margin:-12px 0 32px}
 .pre-enroll button{border:0;border-radius:28px;padding:13px 26px;background:#168b52;color:#fff;font:inherit;font-size:clamp(17px,2.2vw,22px);font-weight:700;cursor:pointer;transition:background .2s,transform .2s}
 .pre-enroll button:hover:not(:disabled){background:#106c3e;transform:translateY(-2px)}
@@ -121,9 +126,9 @@ main{max-width:1000px;margin:0 auto;padding:28px 18px 40px}
 
 footer{background:var(--slate);display:flex;align-items:center;justify-content:space-between;gap:10px;overflow:hidden}
 footer img{height:clamp(100px,16vw,185px);width:auto;max-width:30%;object-fit:cover}
-.dir{background:var(--pill);color:var(--pilltxt);border-radius:40px;padding:12px 40px;text-align:center;font-size:clamp(16px,2.6vw,30px);font-weight:700;margin:0 auto}
-.dir span{display:block;font-size:.75em;font-weight:600}
-.dir a{color:inherit;text-decoration:underline;text-underline-offset:.15em}
+.dir{width:min(620px,calc(100% - 24px));max-width:100%;background:var(--pill);color:var(--pilltxt);border-radius:32px;padding:14px clamp(16px,3vw,32px);text-align:center;font-size:clamp(16px,2.2vw,26px);line-height:1.25;font-weight:700;margin:0 auto}
+.dir span{display:block;margin-bottom:4px;font-size:.85em;font-weight:600}
+.dir a{display:block;color:inherit;text-decoration:underline;text-underline-offset:.15em;overflow-wrap:anywhere}
 .dir a:hover,.dir a:focus-visible{text-decoration-thickness:2px}
 
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}

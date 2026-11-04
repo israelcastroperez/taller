@@ -50,18 +50,24 @@
 
   // selector de horarios
   var pick=document.querySelector('.pick'),preEnroll=document.getElementById('pre-enroll'),selectedSlot=null;
+  var instrumentInputs=document.querySelectorAll('input[name="instrumento"]');
+  function updatePreEnroll(){
+    if(preEnroll)preEnroll.disabled=!selectedSlot||!Array.from(instrumentInputs).some(function(input){return input.checked});
+  }
   document.querySelectorAll('.slots button').forEach(function(b){
     b.addEventListener('click',function(){
       document.querySelectorAll('.slots button.sel').forEach(function(x){x.classList.remove('sel')});
       b.classList.add('sel');
       selectedSlot={turno:b.dataset.turno,hora:b.textContent.trim()};
-      preEnroll.disabled=false;
+      updatePreEnroll();
       pick.textContent='Horario elegido: '+b.dataset.turno+' · '+b.textContent+' (sábados)';
     });
   });
+  instrumentInputs.forEach(function(input){input.addEventListener('change',updatePreEnroll)});
   if(preEnroll)preEnroll.addEventListener('click',function(){
-    if(!selectedSlot)return;
-    var message='Hola, quiero preinscribirme en el Taller formativo de Música Popular. Mi horario de interés es '+selectedSlot.turno+', '+selectedSlot.hora+' (sábados).';
+    var instruments=Array.from(instrumentInputs).filter(function(input){return input.checked}).map(function(input){return input.value});
+    if(!selectedSlot||!instruments.length)return;
+    var message='Hola, quiero preinscribirme en el Taller formativo de Música Popular. Me interesa estudiar: '+instruments.join(', ')+'. Mi horario de interés es '+selectedSlot.turno+', '+selectedSlot.hora+' (sábados).';
     window.open('https://wa.me/50588818170?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
   });
 
