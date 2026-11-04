@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taller formativo de Música Popular</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="progress"></div>
+<button class="theme-btn" aria-label="Cambiar tema">🌙</button>
+<header><div class="notes"></div><small>Taller formativo de</small><h1>Música Popular</h1></header>
+<section class="hero">
+<figure><img src="img/piano.jpg" alt="Manos tocando el piano"><div class="badge b1">Programa intensivo de formación técnica musical</div></figure>
+<figure><img src="img/guitarra.jpg" alt="Guitarrista"><div class="badge b2"><span>Con énfasis en</span>Piano – Guitarra – Bajo</div></figure>
+<figure><img src="img/bajo.jpg" alt="Bajo eléctrico"><div class="badge b3"><span>Inicio</span>Sábado 7 noviembre<div class="countdown" id="countdown"></div></div></figure>
+</section>
+<main>
+<div class="title reveal">Características</div>
+<div class="two">
+<div class="row reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg></div><div><h3>Duración:</h3><p><b>18 Horas</b></p></div></div>
+<div class="row reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5h4"/></svg></div><div><h3>Frecuencia:</h3><p>Una Sesión de 100 minutos por semana</p></div></div>
+</div>
+<div class="row reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></div><div><h3>Contenido:</h3><p>Taller de Habilidades Musicales<br>Taller colectivo de Piano/Guitarra/Bajo</p></div></div>
+<div class="row reveal"><div class="ic"><img src="img/israel.jpg" alt="Mtro. Israel Castro Pérez"></div><div><h3>Docente de piano y Habilidades Musicales:</h3><p>Mtro. Israel Castro Pérez</p></div></div>
+<div class="row reveal"><div class="ic"><img src="img/luis.jpg" alt="Mtro. Luis Cortez Ramírez"></div><div><h3>Docente de Guitarra/Bajo y Habilidades Musicales:</h3><p>Mtro. Luis Cortez Ramírez</p></div></div>
+<div class="row reveal" id="dir" data-text="Barrio Nora Astorga. De donde fue Nicalit 2c al Norte 1 ½ cuadras al Este." style="cursor:pointer" title="Clic para copiar"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><h3>Dirección:</h3><p>Barrio Nora Astorga. De donde fue Nicalit 2c al Norte 1 ½ cuadras al Este.</p></div></div>
+
+<div class="mod reveal">Modalidad sabatina:</div>
+<div class="sched reveal">
+<div class="lab"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2 2M17.1 17.1l2 2M19.1 4.9l-2 2M6.9 17.1l-2 2"/></svg>Matutino</div>
+<div class="slots"><button data-turno="Matutino">08:00 – 09:55</button><button data-turno="Matutino">09:00 – 11:55</button><button data-turno="Matutino">10:00 – 11:55</button></div>
+<div class="lab"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></svg>Vespertino</div>
+<div class="slots"><button data-turno="Vespertino">01:00 – 03:55</button><button data-turno="Vespertino">02:00 – 04:55</button><button data-turno="Vespertino">03:00 – 04:55</button></div>
+</div>
+<div class="pick" aria-live="polite">Toca un horario para elegirlo</div>
+
+<div class="bottom reveal">
+<div class="cost"><b>Costo:</b><em>Mensualidad</em><strong>C$1,600</strong></div>
+<div class="note"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 5c3-1 6-1 10 1 4-2 7-2 10-1v14c-3-1-6-1-10 1-4-2-7-2-10-1z"/><path d="M12 6v14"/></svg></div><p>Diseño curricular Mtro. Israel Castro Pérez. Material didáctico mediado pedagógicamente elaborado por Mtro. Israel Castro Pérez y Mtro. Luis Cortez Ramírez. Basado en Metodología de Berklee College of Music y formas académicas tradicionales y actuales enfocadas en las competencias necesarias para ejercer como un músico integral en el contexto artístico musical contemporáneo.</p></div>
+</div>
+</main>
+<footer><img src="img/tira-izq.jpg" alt=""><div class="dir"><span>Dirigido a</span>Principiantes - Avanzados</div><img src="img/tira-der.jpg" alt=""></footer>
+<div class="toast" role="status"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
