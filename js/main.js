@@ -49,13 +49,20 @@
   if(cd){tick();setInterval(tick,60000)}
 
   // selector de horarios
-  var pick=document.querySelector('.pick');
+  var pick=document.querySelector('.pick'),preEnroll=document.getElementById('pre-enroll'),selectedSlot=null;
   document.querySelectorAll('.slots button').forEach(function(b){
     b.addEventListener('click',function(){
       document.querySelectorAll('.slots button.sel').forEach(function(x){x.classList.remove('sel')});
       b.classList.add('sel');
+      selectedSlot={turno:b.dataset.turno,hora:b.textContent.trim()};
+      preEnroll.disabled=false;
       pick.textContent='Horario elegido: '+b.dataset.turno+' · '+b.textContent+' (sábados)';
     });
+  });
+  if(preEnroll)preEnroll.addEventListener('click',function(){
+    if(!selectedSlot)return;
+    var message='Hola, quiero preinscribirme en el Taller formativo de Música Popular. Mi horario de interés es '+selectedSlot.turno+', '+selectedSlot.hora+' (sábados).';
+    window.open('https://wa.me/50588818170?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
   });
 
   // copiar dirección
