@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Perfil | Taller formativo de Música Popular</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="progress"></div>
+<button class="theme-btn" aria-label="Cambiar tema">🌙</button>
+<header><div class="notes"></div><small>Taller formativo de Música Popular</small><h1>Perfil</h1></header>
+<nav class="page-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="perfil.html" aria-current="page">Perfil</a><a href="dirigido-a.html">Dirigido a</a></nav>
+<main class="profile-main">
+<div class="title reveal">Áreas de formación</div>
+<div class="profile-grid">
+<details class="profile-area reveal">
+<summary><img class="profile-cover-image" src="img/guitarra.jpg" alt="Músico practicando guitarra"><h2>Ejecución del instrumento</h2></summary>
+<div class="profile-submenu">
+<button class="profile-item" type="button" data-description="Trabaja las orientaciones referidas a la fisiología y la relajación que permiten desarrollar agilidad sin producir daños en tendones o articulaciones, logrando un sonido excelente y preciso." aria-haspopup="dialog">Técnica</button>
+<button class="profile-item" type="button" data-description="Consiste en una selección de canciones u obras a montar que se organizan de acuerdo con la curva de aprendizaje natural individual y considerando los intereses del estudiante." aria-haspopup="dialog">Repertorio</button>
+<button class="profile-item" type="button" data-description="Se trata de abarcar distintos géneros y formas de ejecutar el instrumento para tener la base suficiente para incorporarse en cualquier repertorio." aria-haspopup="dialog">Estilos</button>
+</div>
+</details>
+<details class="profile-area reveal">
+<summary><img class="profile-cover-image" src="img/tira-izq.jpg" alt="Estudio de notas y partituras musicales"><h2>Alfabetización musical</h2></summary>
+<div class="profile-submenu">
+<button class="profile-item" type="button" data-description="Consiste en desarrollar la habilidad de tocar canciones utilizando como fuente de información el sistema de notación propio de la música popular, como es el formato de Chart o Lead Sheet." aria-haspopup="dialog">Lectura de Charts</button>
+<button class="profile-item" type="button" data-description="También se trabaja la habilidad de leer partituras y notas en pentagrama, que también se utilizan en algunos repertorios y contextos de la música popular, así como porque se integran en los Charts para detallar elementos obligatorios en la ejecución." aria-haspopup="dialog">Lectura de Partituras</button>
+<button class="profile-item" type="button" data-description="Es importante también desarrollar la habilidad de transcribir música en formato de Charts y poder construirlos, ya sea a mano o con la utilización de computadoras o celulares." aria-haspopup="dialog">Escritura de Charts</button>
+<button class="profile-item" type="button" data-description="También es importante, además de leer, desarrollar la habilidad de escribir melodías y armonías en el formato de notación musical universalmente asumido. Se trabaja este componente en clase y con ayuda de la tecnología." aria-haspopup="dialog">Escritura de Pentagrama</button>
+</div>
+</details>
+<details class="profile-area reveal">
+<summary><img class="profile-cover-image" src="img/piano.jpg" alt="Manos practicando piano"><h2>Conceptual</h2></summary>
+<div class="profile-submenu">
+<button class="profile-item" type="button" data-description="Consiste en desarrollar la habilidad de comprender lo que ocurre en una melodía desde el punto de vista de los intervalos, lo tonal, lo morfológico y lo armónico." aria-haspopup="dialog">Análisis melódico</button>
+<button class="profile-item" type="button" data-description="Tiene una relación biunívoca con el análisis melódico y consiste en comprender el contexto armónico primario o secundario de una canción." aria-haspopup="dialog">Análisis armónico</button>
+<button class="profile-item" type="button" data-description="La comprensión de los compases simples, compuestos, binarios, ternarios y sus implicaciones en la ejecución y morfología musical se abordan en este componente formativo." aria-haspopup="dialog">Teoría del ritmo</button>
+<button class="profile-item" type="button" data-description="Estimula la ejecución de música no solo desde la perspectiva de interpretar el trabajo musical desarrollado por otros, sino también de trascender a la creación de expresión musical propia en forma de composición o arreglo, mediante la integración de los saberes conceptuales y procedimentales adquiridos." aria-haspopup="dialog">Composición y arreglo</button>
+</div>
+</details>
+<details class="profile-area reveal">
+<summary><img class="profile-cover-image" src="img/tira-der.jpg" alt="Músicos interpretando sus instrumentos"><h2>General</h2></summary>
+<div class="profile-submenu">
+<button class="profile-item" type="button" data-description="La importancia de reflexionar acerca de quiénes somos, los principios que dirigen nuestra vida y los fundamentos de una identidad personal sólida y en conexión con la identidad espiritual." aria-haspopup="dialog">Identidad personal</button>
+<button class="profile-item" type="button" data-description="Se reflexiona acerca del propósito y origen de nuestra naturaleza espiritual, así como la relevancia de tener presente a Dios en nuestra vida, en todo lo que hacemos y decidimos." aria-haspopup="dialog">Identidad espiritual</button>
+<button class="profile-item" type="button" data-description="Se trata de encontrar formas de ayudar a otros desde nuestras posibilidades y capacidades, incentivando la realización de acciones que resignifiquen nuestra propia vida." aria-haspopup="dialog">Servicio</button>
+</div>
+</details>
+</div>
+</main>
+<dialog class="profile-dialog" aria-labelledby="profile-dialog-title">
+<form method="dialog"><button class="profile-dialog-close" aria-label="Cerrar">×</button></form>
+<h2 id="profile-dialog-title"></h2>
+<p class="profile-dialog-description"></p>
+</dialog>
+<footer><img src="img/tira-izq.jpg" alt=""><div class="dir"><span>Dirigido a</span>Principiantes - Avanzados</div><img src="img/tira-der.jpg" alt=""></footer>
+<div class="toast" role="status"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
