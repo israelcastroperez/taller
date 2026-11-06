@@ -153,5 +153,5 @@ footer img{height:clamp(100px,16vw,185px);width:auto;max-width:30%;object-fit:co
 .toast.show{transform:translateX(-50%)}
 
 @media(max-width:900px){.profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:720px){.hero{grid-template-columns:1fr}.two,.bottom,.sched,.enrollment-fields,.audience-grid,.method-grid{grid-template-columns:1fr}.profile-grid{grid-template-columns:1fr}.profile-area h2,.profile-item{min-height:88px}.audience-card{min-height:220px}.slots button:first-child{border-left:3px solid var(--text)}footer img{display:none}.dir{margin:0}footer{justify-content:center}}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.two,.bottom,.sched,.enrollment-fields,.audience-grid,.method-grid{grid-template-columns:1fr}.slots{grid-template-columns:1fr}.slots button{text-align:left;white-space:nowrap}.profile-grid{grid-template-columns:1fr}.profile-area h2,.profile-item{min-height:88px}.audience-card{min-height:220px}.slots button:first-child{border-left:3px solid var(--text)}footer img{display:none}.dir{margin:0}footer{justify-content:center}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
