@@ -36,6 +36,7 @@ header h1{margin:0;font-size:clamp(42px,9vw,96px);line-height:1;font-weight:800;
 main{max-width:1000px;margin:0 auto;padding:28px 18px 40px}
 .title,.mod{display:table;margin:0 auto 26px;background:var(--navy);color:#fff;border-radius:40px;padding:6px 48px;font-size:clamp(28px,5vw,52px);font-weight:800;box-shadow:0 6px 16px #0003}
 .mod{font-size:clamp(24px,4vw,44px);font-weight:700;margin-top:10px;margin-bottom:18px;padding:6px 60px}
+.enrollment-intro{max-width:760px;margin:0 auto 24px;text-align:center;font-size:clamp(18px,2.4vw,24px)}
 .profile-main{max-width:1280px}
 .profile-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
 .profile-area{transition:transform .3s,filter .3s}
@@ -117,6 +118,11 @@ main{max-width:1000px;margin:0 auto;padding:28px 18px 40px}
 .instrument-picker label{display:flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid #ffffff80;border-radius:22px;background:var(--card);font-size:clamp(17px,2.2vw,21px);cursor:pointer}
 .instrument-picker input{width:20px;height:20px;margin:0;accent-color:var(--navy)}
 .instrument-picker label:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.enrollment-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px;margin:0 auto 28px}
+.enrollment-fields label{display:grid;gap:7px;font-size:17px;font-weight:700}
+.enrollment-fields input,.enrollment-fields textarea{width:100%;padding:12px 14px;border:1px solid #ffffff80;border-radius:12px;background:var(--card);color:var(--text);font:inherit;font-weight:400}
+.enrollment-fields textarea{resize:vertical}
+.enrollment-fields input:focus-visible,.enrollment-fields textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .pre-enroll{display:flex;justify-content:center;margin:-12px 0 32px}
 .pre-enroll button{border:0;border-radius:28px;padding:13px 26px;background:#168b52;color:#fff;font:inherit;font-size:clamp(17px,2.2vw,22px);font-weight:700;cursor:pointer;transition:background .2s,transform .2s}
 .pre-enroll button:hover:not(:disabled){background:#106c3e;transform:translateY(-2px)}
@@ -147,5 +153,5 @@ footer img{height:clamp(100px,16vw,185px);width:auto;max-width:30%;object-fit:co
 .toast.show{transform:translateX(-50%)}
 
 @media(max-width:900px){.profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:720px){.hero{grid-template-columns:1fr}.two,.bottom,.sched,.audience-grid,.method-grid{grid-template-columns:1fr}.profile-grid{grid-template-columns:1fr}.profile-area h2,.profile-item{min-height:88px}.audience-card{min-height:220px}.slots button:first-child{border-left:3px solid var(--text)}footer img{display:none}.dir{margin:0}footer{justify-content:center}}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.two,.bottom,.sched,.enrollment-fields,.audience-grid,.method-grid{grid-template-columns:1fr}.profile-grid{grid-template-columns:1fr}.profile-area h2,.profile-item{min-height:88px}.audience-card{min-height:220px}.slots button:first-child{border-left:3px solid var(--text)}footer img{display:none}.dir{margin:0}footer{justify-content:center}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}

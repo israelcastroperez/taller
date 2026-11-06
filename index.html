@@ -10,7 +10,7 @@
 <div class="progress"></div>
 <button class="theme-btn" aria-label="Cambiar tema">🌙</button>
 <header><div class="notes"></div><small>Taller formativo de</small><h1>Música Popular</h1></header>
-<nav class="page-nav" aria-label="Navegación principal"><a href="index.html" aria-current="page">Inicio</a><a href="perfil.html">Perfil</a><a href="dirigido-a.html">Dirigido a</a><a href="metodologia.html">Metodología</a></nav>
+<nav class="page-nav" aria-label="Navegación principal"><a href="index.html" aria-current="page">Inicio</a><a href="perfil.html">Perfil</a><a href="dirigido-a.html">Dirigido a</a><a href="metodologia.html">Metodología</a><a href="inscripcion.html">Inscripción</a></nav>
 <section class="hero">
 <figure><img src="img/piano.jpg" alt="Manos tocando el piano"><div class="badge b1">Programa intensivo de formación técnica musical</div></figure>
 <figure><img src="img/guitarra.jpg" alt="Guitarrista"><div class="badge b2"><span>Con énfasis en</span>Piano – Guitarra – Bajo</div></figure>
@@ -27,7 +27,8 @@
 <div class="row reveal"><div class="ic"><img src="img/luis.jpg" alt="Mtro. Luis Cortez Ramírez"></div><div><h3>Docente de Guitarra/Bajo y Habilidades Musicales:</h3><p>Mtro. Luis Cortez Ramírez</p></div></div>
 <div class="row reveal" id="dir" data-text="Barrio Nora Astorga. De donde fue Nicalit 2c al Norte 1 ½ cuadras al Este." style="cursor:pointer" title="Clic para copiar"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><h3>Dirección:</h3><p>Barrio Nora Astorga. De donde fue Nicalit 2c al Norte 1 ½ cuadras al Este.</p></div></div>
 
-<div class="mod reveal">Modalidad sabatina:</div>
+<div class="mod reveal">Solicitud de Inscripción</div>
+<p class="enrollment-intro">En esta ocasión, el programa se desarrollará en modalidad sabatina. Selecciona el horario y el instrumento de tu preferencia.</p>
 <div class="sched reveal">
 <div class="lab"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2 2M17.1 17.1l2 2M19.1 4.9l-2 2M6.9 17.1l-2 2"/></svg>Matutino</div>
 <div class="slots"><button data-turno="Matutino">08:00 – 09:55</button><button data-turno="Matutino">09:00 – 11:55</button><button data-turno="Matutino">10:00 – 11:55</button></div>
@@ -41,6 +42,10 @@
 <label><input type="checkbox" name="instrumento" value="Guitarra"> Guitarra</label>
 <label><input type="checkbox" name="instrumento" value="Bajo"> Bajo</label>
 </fieldset>
+<div class="enrollment-fields">
+<label>Nombre (opcional)<input type="text" name="nombre" autocomplete="name" placeholder="Escribe tu nombre"></label>
+<label>Comentarios (opcional)<textarea name="comentarios" rows="3" placeholder="¿Hay algo más que quieras contarnos?"></textarea></label>
+</div>
 <div class="pre-enroll"><button id="pre-enroll" type="button" disabled>Preinscribirme por WhatsApp</button></div>
 
 <div class="bottom reveal">

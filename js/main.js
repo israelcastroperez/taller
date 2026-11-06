@@ -51,6 +51,7 @@
   // selector de horarios
   var pick=document.querySelector('.pick'),preEnroll=document.getElementById('pre-enroll'),selectedSlot=null;
   var instrumentInputs=document.querySelectorAll('input[name="instrumento"]');
+  var nameInput=document.querySelector('input[name="nombre"]'),commentsInput=document.querySelector('textarea[name="comentarios"]');
   function updatePreEnroll(){
     if(preEnroll)preEnroll.disabled=!selectedSlot||!Array.from(instrumentInputs).some(function(input){return input.checked});
   }
@@ -68,6 +69,8 @@
     var instruments=Array.from(instrumentInputs).filter(function(input){return input.checked}).map(function(input){return input.value});
     if(!selectedSlot||!instruments.length)return;
     var message='Hola, quiero preinscribirme en el Taller formativo de Música Popular. Me interesa estudiar: '+instruments.join(', ')+'. Mi horario de interés es '+selectedSlot.turno+', '+selectedSlot.hora+' (sábados).';
+    if(nameInput.value.trim())message+=' Mi nombre es '+nameInput.value.trim()+'.';
+    if(commentsInput.value.trim())message+=' Comentarios: '+commentsInput.value.trim();
     window.open('https://wa.me/50588818170?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
   });
 

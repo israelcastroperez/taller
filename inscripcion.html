@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Formulario de inscripción al Taller formativo de Música Popular.">
+<title>Solicitud de Inscripción | Taller formativo de Música Popular</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main>
+<h1 class="mod">Solicitud de Inscripción</h1>
+<p class="enrollment-intro">En esta ocasión, el programa se desarrollará en modalidad sabatina. Selecciona el horario y el instrumento de tu preferencia.</p>
+<form aria-label="Formulario de inscripción">
+<div class="sched">
+<div class="lab"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2 2M17.1 17.1l2 2M19.1 4.9l-2 2M6.9 17.1l-2 2"/></svg>Matutino</div>
+<div class="slots"><button type="button" data-turno="Matutino">08:00 – 09:55</button><button type="button" data-turno="Matutino">09:00 – 11:55</button><button type="button" data-turno="Matutino">10:00 – 11:55</button></div>
+<div class="lab"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></svg>Vespertino</div>
+<div class="slots"><button type="button" data-turno="Vespertino">01:00 – 03:55</button><button type="button" data-turno="Vespertino">02:00 – 04:55</button><button type="button" data-turno="Vespertino">03:00 – 04:55</button></div>
+</div>
+<div class="pick" aria-live="polite">Toca un horario para elegirlo</div>
+<fieldset class="instrument-picker">
+<legend>¿Qué instrumento quieres estudiar? Puedes elegir más de uno.</legend>
+<label><input type="checkbox" name="instrumento" value="Piano"> Piano</label>
+<label><input type="checkbox" name="instrumento" value="Guitarra"> Guitarra</label>
+<label><input type="checkbox" name="instrumento" value="Bajo"> Bajo</label>
+</fieldset>
+<div class="enrollment-fields">
+<label>Nombre (opcional)<input type="text" name="nombre" autocomplete="name" placeholder="Escribe tu nombre"></label>
+<label>Comentarios (opcional)<textarea name="comentarios" rows="3" placeholder="¿Hay algo más que quieras contarnos?"></textarea></label>
+</div>
+<div class="pre-enroll"><button id="pre-enroll" type="button" disabled>Inscribirme por WhatsApp</button></div>
+</form>
+</main>
+<script src="js/inscripcion.js"></script>
+</body>
+</html>
